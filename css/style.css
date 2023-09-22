@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap'); */
+@import url('https://fonts.cdnfonts.com/css/fashion-wacks');
+
+:root {
+  --dark-color: #232323;
+  --brown-color: #d99c5d;
+  --light-color: #eeecec;
+  --white-color: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: var(--brown-color);
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  position: relative;
+}
+
+.btn.shop-icon::before {
+  content: url(/img/bag.svg);
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  transform: translateY(-50%);
+}
+
+.btn.shop-icon {
+  padding-left: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    padding: 1%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    top: 20px;
+    z-index: 100;
+}
+
+nav .logo {
+    font-family: 'Fashion Wacks', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin-left: 1%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
+
+.hero-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.hero-section .left h1 { 
+    font-family: "Fashion Wacks", sans-serif;
+    font-size: 50px;
+    line-height: 125%;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.hero-section .left p { 
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    line-height: 125%;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.hero-section .left {
+    width: 500px;
+    margin-left: 5%;
+}
+
+.hero-section .right img {
+    height: 740px;
+}
+
+
+/* .product-cards {
+    display: block;
+} */
+
+.brand-section {
+    background: var(--dark-color);
+}
+
+.brand-section .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.brand-section .content img {
+    margin: 5px 50px;
+}
+
+/* .product-card {
+    position: absolute;
+} */
+
+.product-card .content {
+    background: var(--brown-color);
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.product { 
+    display: block;
+    width: 100%;
+    margin-left: 10px;
+
+}
+
+.highlights-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+.highlights-section .description h1 {
+    font-family: "Fashion Wacks", sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.highlights-section .description p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+.highlights-section .product-img img{
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* FOOTER AREA */
+
+.footer-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.footer-logo .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-wrapper {
+    background: var(--light-color);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem 0 2rem;
+}
+
+.footer-wrapper .footer-menu h1 {
+    font-family: "Fashion Wacks", sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.how, .services, .contact {
+    margin: 0 20px 20px 20px;
+}
+
+.left-logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo .left-logo .social-icons img{
+    display: flex;
+    margin: 0 5px 0 5px;
+}
+
+.footer-logo .left-logo h1 {
+    font-family: "Fashion Wacks", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.how-menu, .services-menu, .contact-menu {
+    color: #000000;
+    opacity: 50%;
+}
