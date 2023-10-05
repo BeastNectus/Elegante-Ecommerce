@@ -37,8 +37,8 @@ body {
   position: relative;
 }
 
-.btn.shop-icon::before {
-  content: url(./img/bag.svg);
+.btn.shop-icon:before {
+  content: url(../img/bag.svg);
   position: absolute;
   top: 50%;
   left: 32px;
