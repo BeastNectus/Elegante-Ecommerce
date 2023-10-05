@@ -27,26 +27,24 @@ body {
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
+  width: fit-content;
+  align-items: center;
   padding: 16px 32px;
   background-color: var(--brown-color);
   color: var(--white-color);
-  text-decoration: none;
-  font-weight: bold;
   border-radius: 30px;
-  position: relative;
 }
 
-.btn.shop-icon:before {
-  content: url(../img/bag.svg);
-  position: absolute;
-  top: 50%;
-  left: 32px;
-  transform: translateY(-50%);
+.btn a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: bold;
 }
 
-.btn.shop-icon {
-  padding-left: 60px;
+.btn a, img {
+    margin: 0 5px;
+
 }
 
 /* Header */
@@ -95,7 +93,6 @@ nav ul li a {
   width: 100vw;
   align-items: center;
   justify-content: space-between;
-  /* padding-top: 60px; */
 }
 
 .hero-section .left h1 {
@@ -123,9 +120,6 @@ nav ul li a {
   height: 100vh;
 }
 
-/* .product-cards {
-    display: block;
-} */
 
 @keyframes slide {
   from {
@@ -170,23 +164,15 @@ nav ul li a {
 }
 
 .brand-section .content {
-  /* display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px; */
   display: inline-block;
   animation: 20s slide infinite linear;
 }
 
 .brand-section .content img {
-  /* margin: 5px 50px; */
   height: 30px;
   margin: 0 40px;
 }
 
-/* .product-card {
-    position: absolute;
-} */
 
 .product-card .content {
   background: var(--brown-color);
