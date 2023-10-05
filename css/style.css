@@ -33,7 +33,7 @@ body {
   padding: 16px 32px;
   background-color: var(--brown-color);
   color: var(--white-color);
-  border-radius: 30px;
+  filter: drop-shadow(4px 4px 0px var(--dark-color));
 }
 
 .btn a {
@@ -53,7 +53,6 @@ header {
   width: 100%;
   padding: 1%;
   border-bottom: 2px solid rgba(71, 71, 71, 0.737);
-  margin-bottom: 5%;
 }
 
 nav {
@@ -120,7 +119,7 @@ nav ul li a {
 
 .hero-section .left {
   width: 500px;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 
 .hero-section .right img {
@@ -183,6 +182,7 @@ nav ul li a {
 
 .product-card .content {
   background: var(--brown-color);
+  filter: drop-shadow(4px 4px 0 var(--dark-color));
   border-radius: 5px;
   padding: 10px 10px;
   margin: 2rem;
@@ -194,6 +194,22 @@ nav ul li a {
   display: block;
   width: 100%;
   margin-left: 10px;
+}
+
+.product-cards {
+  height: 100vh;
+}
+
+.product img{
+  margin: -5px;
+  height: 40px;
+  width: 40px;
+}
+
+.product-img-hero img {
+  height: 95px;
+  width: 95px;
+  border: 2px solid var(--light-color)
 }
 
 .highlights-section {
@@ -312,4 +328,9 @@ nav ul li a {
 .contact-menu {
   color: #000000;
   opacity: 50%;
+}
+
+.author {
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
 }
